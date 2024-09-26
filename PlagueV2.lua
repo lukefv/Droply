@@ -141,18 +141,20 @@ UIGradient_3.Rotation = 90
 UIGradient_3.Parent = W
 
 for Name, Id in next, Sounds do
-	local Sound = Instance.new("Sound", workspace)
-	Sound.SoundId = `rbxassetid://{Id}`
+	local Sound = Instance.new("Sound")
+	Sound.Parent = Players.LocalPlayer:WaitForChild("PlayerGui")
+	Sound.SoundId = "rbxassetid://"..tostring(Id)  
 	Sound.Volume = 1
 	Sounds[Name] = Sound
 end
+
 
 local function Say(str)
 	str = tostring(str)
 	if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
 		TextChatService.TextChannels.RBXGeneral:SendAsync(str)
 	else
-		ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(str, "All")
+		--ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(str, "All")
 	end
 end
 
