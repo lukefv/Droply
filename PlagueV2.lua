@@ -3,7 +3,6 @@ local The_Plague = {
 	"this is tough and rough !1",
 	"im a good guy yk !1",
 	"are you a plague? Because if yes then don't get near me",
-	"wait till MasterMZ finds out",
 	"are you a skibidi mogger?? ?? cuz if yes then you can have myyyy grimace shake!1",
 	"are you a mogger?? Because if yes, then you could fanum tax me anytime 😨😨🙏",
 	"are you a plague?11??? because if yes,,,, then im attracted to you",
